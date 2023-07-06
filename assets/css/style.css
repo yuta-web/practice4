@@ -5,12 +5,279 @@ hr{
     padding: 0;
     border: 0;
 }
-
 body{
   margin: 0%;
   counter-reset: number 0;
 }
-
 p{
     margin: 0;
+}
+ul,a{
+  margin: 0%;
+}
+
+/*ヘッダー*/
+.fmv{
+  width: 100%;
+  height: 40.388vw;
+  background-image:url(../img/FMV.png);
+  background-size: 100vw 43.388vw;
+  padding-top: 2.77vw;
+  position: relative;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  font-size: 1.25vw;
+  list-style: none;
+  align-items: center;
+  font-family: Shippori Mincho;
+  margin-right: 2.77vw;
+  color: white;
+  text-decoration: none;
+}
+
+.catchcopy-1{
+  background-color:#EEE9DA;
+  width: 53.611vw;
+  height: 5.55vw;
+  margin: 11.11vw 31.04vw 0 15.55vw;
+}
+
+.catchcopy-1 p{
+  font-size: 2.77vw;
+  text-align: center;
+  font-family:Shippori Mincho;
+  font-weight:bold
+}
+
+.catchcopy-2{
+  background-color:#EEE9DA;
+  width: 24.30vw;
+  height: 5.55vw;
+  margin: 1.388vw 60.347vw 15.694vw 15.55vw;
+}
+
+.catchcopy-2 img{
+  width: 24.30vw;
+  height: 5.55vw;
+  position: absolute;
+  top: 23vw;
+  left: 15.5vw;
+}
+
+/*4つのポイント*/
+.point{
+  display: flex;
+  justify-content: center;
+  margin: 2.77vw 0 1.388vw 0;
+}
+
+.blue-circle{
+  position: relative;
+}
+.circle1 p,.circle2 p{
+  font-family: Shippori Mincho;
+  color: #FFFFFF;
+  font-size: 2.5vw;
+  width: 5.416vw;
+  height: auto;
+}
+
+.circle3 p{
+  font-family: Shippori Mincho;
+  color: #FFFFFF;
+  font-size: 2.12vw;
+  width: 11.875vw;
+  height: auto;
+}
+
+.circle4 p{
+  font-family: Shippori Mincho;
+  color: #FFFFFF;
+  font-size: 2.12vw;
+  width: 9.44vw;
+  height: auto;
+}
+
+.circle1{
+  margin-right: 2.361vw;
+}
+.circle2,.circle3{
+  margin-right: 2.569vw;
+}
+
+.circle1 p,.circle2 p{
+  position: absolute;
+  top: 5.5vw;
+  left:7vw;
+}
+.circle3 p,.circle4 p{
+  position: absolute;
+  top: 6.0vw;
+  left:5vw;
+}
+
+/*CTA*/
+.cta{
+  width: 100%;
+  height: 5.55vw;
+  background-image:url(../img/background2.png);
+  background-size: 100vw 5.55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta p{
+  font-family: Shippori Mincho;
+  font-size: 1.66vw;
+  margin-right: 0.694vw;
+}
+
+.cta img{
+  width: 2.77vw;
+  height: auto;
+}
+
+/*こだわり1*/
+.kodawari-p{
+  display: flex;
+  justify-content: center;
+  margin-top: 7.01vw;
+  align-items: center;
+}
+
+.kodawari-p p{
+  font-family: Shippori Mincho;
+  font-size: 2.77vw;
+  color: #6096B4;
+}
+
+.kodawari-1{
+  font-family: Beau Rivage;
+  font-size: 6.66vw;
+}
+
+/*明確で分かりやすい料金体系*/
+.cost-plan-p{
+  text-align: center;
+  font-family: Shippori Mincho;
+  font-size: 1.66vw;
+  color: #3F3E44;
+  background: linear-gradient(transparent 60%, #C7D9EA99 30%);
+  width: 22.5vw;
+}
+
+/*ミシン修理プランは以下の6つだけ*/
+.sewing-machine-plan{
+  font-family: Shippori Mincho;
+  font-size: 1.66vw;
+  text-align: center;
+}
+.six{
+  font-family: Shippori Mincho;
+  font-size: 2.22vw;
+}
+
+/*料金表*/
+.ryokinnhyo{
+  max-width: 1440px;
+  height: auto;
+  margin-bottom: 12.847vw;
+}
+
+.menu-list{
+  display: flex;
+  font-family:Klee One;
+  font-size: 2.77vw;
+  margin: 10.208vw 2.83vw 0vw 32.19vw;
+}
+.menu-list p{
+  padding: 0 7.638vw 0 7.638vw;
+}
+
+.tosou-menu{
+  font-family:Klee One;
+  font-size: 2.77vw;
+  margin: 0 auto;
+}
+
+.green-back .block1,
+.green-back .block2,
+.green-back .block3{
+      margin-right: 1vw;
+      background-color: #EBF6E9;
+}
+
+.green-back,
+.white-back{
+  width: 69.44vw;
+  height: auto;
+  text-align: center;
+  height: auto;
+  justify-content: center;
+  margin: 0 15.277vw 0 15.277vw;
+  align-items: center;
+}
+@media screen and (max-width:768px){
+  .green-back,
+  .white-back{
+      width: 100vw;
+      margin: 0;
+  }
+
+  .tosou-area2-1 p,
+  .tosou-area2-2 p{
+      padding-left: 55vw;
+      font-family:Klee One;
+  }
+
+  .tosou-menu2{
+      font-family:Klee One;
+      font-size: 2.343vw;
+  }
+}
+
+.block1{
+  width: 17.361vw;
+  height: 6.944vw;
+  font-size: 2.22vw;
+}
+.block2{
+  width: 26.041vw;
+  height: 6.944vw;
+  font-size: 1.66vw;
+}
+@media screen and (max-width:768px){
+  .block1{
+      width: 28vw;
+      height: 6.944vw;
+      font-size: 4vw;
+  }
+  .block2{
+      width: 72vw;
+      font-size: 4vw;
+  }
+}
+.block3{
+  width: 26.041vw;
+  height: 6.944vw;
+  font-size: 1.66vw;
+}
+
+@media screen and (min-width: 768px) {
+  .tosou-area2-1 p,
+  .tosou-area2-2 p,
+  .tosou-menu2 {
+   display: none;
+ }
+}
+
+@media screen and (max-width:768px){
+  .tosou-area,
+  .tosou-menu{
+       display:none;
+   }
 }
