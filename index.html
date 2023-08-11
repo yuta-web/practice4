@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Shippori+Mincho&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel=“preconnect” href=“https://fonts.googleapis.com”>
+    <link rel=“preconnect” href=“https://fonts.gstatic.com” crossorigin>
+    <link href=“https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap” rel=“stylesheet”>
     <title>Re'made</title>
 </head>
 <body>
@@ -59,81 +59,416 @@
         <p>LINEで簡単依頼</p>
         <img src="./assets/img/LINE-icon.png" alt="LINE-icon" width="40" height="40">
     </div>
-    <!--こだわり1-->
+    <!--Re’ madeのこだわり01-->
     <div class="kodawari-p">
         <p>Re’ madeのこだわり</p> 
         <div class="kodawari-1">
-            01
+            <img src="./assets/img/zeroone.png" alt="01" width="123" height="129">
         </div>
     </div>
     <!--明確で分かりやすい料金体系-->
     <div class="cost-plan-p">
-        明確で分かりやすい料金体系
+        <p>明確で分かりやすい料金体系</p>
     </div>
     <!--ミシン修理プランは以下の6つだけ-->
     <p class="sewing-machine-plan">ミシン修理プランは以下の
-        <span class="six">6つ</span>
+        <span class="six">6</span>
+        <span class="tu">つ</span>
         だけ
     </p>
     <!--料金表-->
     <div class="ryokinnhyo">
         <div class="menu-list">
-            <p>製品サポート</p>
-            <p>液晶</p>
-            <p>部品交換をしない修理</p>
-            <p>部品交換が必要な修理</p>
+            <p class="list-1">製品サポート</p>
+            <p class="list-2">液晶</p>
+            <p class="list-3">部品交換をしない修理</p>
+            <p class="list-4">部品交換が必要な修理</p>
         </div>
         <table class="tosou-menu">
             <tr class="green-back">
-                <td class="block1">シリコン</td>
-                <td class="block2">¥2,000 〜 ¥3,000 /㎡</td>
-                <td class="block3">¥2,000 〜 ¥2,300 /㎡</td>
+                <td class="block1">継続している機種</td>
+                <td class="block2">液晶なし</td>
+                <td class="block3">¥6,000</td>
+                <td class="block4">¥12,000</td>
             </tr>
             <tr class="white-back">
-                <td class="block1">フッ素</td>
-                <td class="block2">¥3,500 〜 ¥3,800 /㎡</td>
-                <td class="block3">¥2,500 〜 ¥2,800 /㎡</td>
+                <td class="block1">継続している機種</td>
+                <td class="block2">液晶あり</td>
+                <td class="block3">¥8,000</td>
+                <td class="block4">¥15,000</td>
             </tr>
             <tr class="green-back">
-                <td class="block1">断熱</td>
-                <td class="block2">¥4,000 〜 ¥4,200 /㎡</td>
-                <td class="block3">¥2,800 〜 ¥3,000 /㎡</td>
+                <td class="block1">終了している機種</td>
+                <td class="block2">すべて</td>
+                <td class="block3">¥15,000</td>
+                <td class="block4">¥25,000</td>
             </tr>
         </table>
-        <div class="tosou-area2-1">
-            <p>外壁塗装</p>
+    </div>
+    <!--送料・部品交換などの追加費用０円-->
+    <p class="hukidashi-p">さらにRe’ madeなら</p>
+    <img src="./assets/img/hukidashi.png" class="hukidashi" alt="吹き出し" width="200" height="34">
+    <p class="addition-cost-p">送料・部品交換などの追加費用
+    <span class="zero">
+        <img src="./assets/img/zero.png" alt="zero" width="64" height="93">
+    </span>
+        円</p>
+    <!--他社との比較表①-->
+    <p class="comparison-chartt-p1">Re’madeは、ミシン修理業界のわかりにくい料金体系を変えるべく</p>
+        <p class="comparison-chartt-p2">料金体系を6つに絞りました。</p>
+            <p class="comparison-chartt-p3">上記の表以外の<span class="red-p">追加費用等が発生することは一切ありません。</span></p>
+    <div class="comparison-chartt-pic">
+        <img src="./assets/img/comparison-chart1.png" alt="他社との比較表①" width="481" height="409">
+    </div>
+    <p class="slide-p">
+        送料や部品交換などミシン修理にかかるすべての費用の比較
+    </p>
+    <!--他社との比較表②-->
+    <table class="comparison-chartt-slide">
+        <tbody>
+            <tr class="item">
+                <td class="product-support-p">製品サポート</td>
+                <td class="liquid-crystal-p">液晶</td>
+                <td class="parts-trade-fix-p">部品交換修理の有無</td>
+                <td class="re-made-p">Re’made</td>
+                <td class="company-a-p">A社</td>
+                <td class="company-b-p">B社</td>
+            </tr>
+            <tr>
+                <td class="continue-model" rowspan="4">継続している機種</td>
+                <td class="liquid-crystal-no" rowspan="2">液晶なし</td>
+                <td class="no-p">なし</td>
+                <td class="six-th">¥6,000</td>
+                <td class="fix-a1-cost-value">¥12,000 ~ 18,000
+                    <br><span class="fix-cost">( 修理技術料 )</span></td>
+                <td class="fix--postage-b1-cost-value">¥3,240 ~
+                    <br><span class="fix-postage-cost">( 修理技術料 + 送料 )</span></td>
+            </tr>
+            <tr>
+                <td class="yes-p">あり</td>
+                <td class="twe-th">¥12,000</td>
+                <td class="fix-trade-a1-cost-value">¥15,000 ~ 18,000
+                    <br><span class="fix-trade-cost">( 修理技術料 + 各種部品交換代 )</span></td>
+                <td class="trade-postage-b1-cost-value">¥6,480 ~
+                    <br><span class="trade-postage-cost">( 各種部品交換代 + 送料 )</span></td>
+            </tr>
+            <tr>
+                <td class="liquid-crystal-yes" rowspan="2">液晶あり</td>
+                <td class="no-p">なし</td>
+                <td class="eight-th">¥8,000</td>
+                <td class="fix-a2-cost-value">¥23,000
+                    <br><span class="fix-cost">( 修理技術料 )</span></td>
+                <td class="fix--postage-b2-cost-value">¥5,400 ~<br>
+                    <span class="fix-postage-cost">( 修理技術料 + 送料 )</span></td>
+            </tr>
+            <tr>
+                <td class="yes-p">あり</td>
+                <td class="fif-th">¥15,000</td>
+                <td class="fix-trade-a2-cost-value">¥23,000
+                    <br><span class="fix-trade-cost">( 修理技術料 + 各種部品交換代 )</span></td>
+                <td class="fix-postage-b2-cost-value">¥8,640 ~
+                    <br><span class="trade-postage-cost">( 各種部品交換代 + 送料 )</span></td>
+            </tr>
+            <tr>
+                <td class="finish-model" rowspan="2">終了している機種</td>
+                <td class="liquid-crystal-all" rowspan="2">すべて</td>
+                <td class="no-p">なし</td>
+                <td class="fif-th">¥15,000</td>
+                <td class="fix-a3-cost-value">¥15,000 ~ 18,000
+                    <br><span class="fix-cost">( 修理技術料 )</span></td>
+                <td class="fix-postage-b3-cost-value">¥3,240 ~
+                    <br><span class="fix-postage-cost">( 修理技術料 + 送料 )</span></td>
+            </tr>
+            <tr>
+                <td class="yes-p">あり</td>
+                <td class="twefive-th">¥25,000</td>
+                <td class="fix-trade-a3-cost-value">¥15,000 ~ 23,000
+                    <br><span class="fix-trade-cost">( 修理技術料 + 各種部品交換代 )</span></td>
+                <td class="fix-trade-postage-b3-cost-value">¥6,480 ~
+                    <br><span class="fix-trade-postage-cost">( 修理技術料 + 各種部品交換代 + 送料 )</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--スライドして閲覧-1-->
+    <div class="slide-1">
+        <div class="slide-allow-l">
+            <img src="./assets/img/slide-allow-l.png" alt="Vector" width="12" height="20">
         </div>
-        <table class="tosou-menu2">
-            <tr class="green-back">
-                <td class="block1">シリコン</td>
-                <td class="block2">¥2,000 〜 ¥3,000 /㎡</td>
-            </tr>
-            <tr class="white-back">
-                <td class="block1">フッ素</td>
-                <td class="block2">¥3,500 〜 ¥3,800 /㎡</td>
-            </tr>
-            <tr class="green-back">
-                <td class="block1">断熱</td>
-                <td class="block2">¥4,000 〜 ¥4,200 /㎡</td>
-            </tr>
-        </table>
-        <div class="tosou-area2-2">
-            <p>屋根塗装</p>
+        <div class="slide-square-l">
+            <img src="./assets/img/slide-square-l.png" alt="Vector" width="5" height="20">
         </div>
-        <table class="tosou-menu2">
-            <tr class="green-back">
-                <td class="block1">シリコン</td>
-                <td class="block2">¥2,000 〜 ¥2,300 /㎡</td>
-            </tr>
-            <tr class="white-back">
-                <td class="block1">フッ素</td>
-                <td class="block2">¥2,500 〜 ¥2,800 /㎡</td>
-            </tr>
-            <tr class="green-back">
-                <td class="block1">断熱</td>
-                <td class="block2">¥2,800 〜 ¥3,000 /㎡</td>
-            </tr>
-        </table>
+        <p>スライドして閲覧</p>
+        <div class="slide-square-r">
+            <img src="./assets/img/slide-square-r.png" alt="Vector" width="5" height="20">
+        </div>
+        <div class="slide-allow-r">
+            <img src="./assets/img/slide-allow-r.png" alt="Vector" width="12" height="20">
+        </div>
+    </div>
+    <!--10年以上・累計1万台を超える修理実績-->
+    <div class="repair-achievements-background">
+        <div class="repair-p">10年以上・累計1万台を超える修理実績</div>
+        <div class="repair-text">
+            <p>Re’madeは累計1万台以上、様々なメーカー機種の修理実績があります。
+            他社様に断られたものでも修理可能です。</p> 
+            <p>また、宅配修理のため日本全国どこでもご対応できます。</p>
+        </div>
+        <p class="repair-achievements-model-p">
+            修理実績機種例
+        </p>
+        <div class="repair-achievements-model">
+            <div class="juki-1">
+                <p class="juki-1-p">JUKI</p>
+                <div class="example">
+                    <p>衣縫人BL34</p>
+                    <p>衣縫人BL54</p>
+                    <p>衣縫人BL5900</p>
+                    <p>衣縫人PROLINE4BUNKA</p>
+                    <p>衣縫人BL527EXS</p>
+                    <p>BL77WJ</p>
+                    <p>糸取物語 BL66</p>
+                </div>
+            </div>
+            <div class="juki-2">
+                <p class="juki-2-p">JUKI</p>
+                <div class="example">
+                    <p>衣縫人BL34</p>
+                    <p>衣縫人BL54</p>
+                    <p>衣縫人BL5900</p>
+                    <p>衣縫人PROLINE4BUNKA</p>
+                    <p>衣縫人BL527EXS</p>
+                    <p>BL77WJ</p>
+                    <p>糸取物語 BL66</p>
+                </div>
+            </div>
+            <div class="blother">
+                <p class="blother-p">BLOTHER</p>
+                <div class="example">
+                    <p>CR1000</p>
+                    <p>PS-10</p>
+                    <p>EMV4301</p>
+                    <p>ELU-53</p>
+                    <p>EL-135</p>
+                    <p>TA-637</p>
+                    <p>CENTURY7700</p>
+                </div>
+            </div>
+            <div class="singer">
+                <p class="singer-p">SINGER</p>
+                <div class="example">
+                    <p>APRICOT 9700</p>
+                    <p>SN771</p>
+                    <p>7900DX</p>
+                    <p>1050DX</p>
+                    <p>7500SDX</p>
+                    <p>PREGIO5780</p>
+                    <p>SC-107</p>
+                </div>
+            </div>
+            <div class="juki">
+                <p class="juki-p">JUKI</p>
+                <div class="example">
+                    <p>SECIO-EXⅢ</p>
+                    <p>SECIO8210</p>
+                    <p>MC6000</p>
+                    <p>3090</p>
+                    <p>6650</p>
+                    <p>JANOME JP710N</p>
+                    <p>COMBI2300SX</p>
+                </div>
+            </div>
+        </div>
+        <!--スライドして閲覧-2-->
+        <div class="slide-2">
+            <div class="slide-allow-l">
+                <img src="./assets/img/slide-allow-l.png" alt="Vector" width="12" height="20">
+            </div>
+            <div class="slide-square-l">
+                <img src="./assets/img/slide-square-l.png" alt="Vector" width="5" height="20">
+            </div>
+            <p>スライドして閲覧</p>
+            <div class="slide-square-r">
+                <img src="./assets/img/slide-square-r.png" alt="Vector" width="5" height="20">
+            </div>
+            <div class="slide-allow-r">
+                <img src="./assets/img/slide-allow-r.png" alt="Vector" width="12" height="20">
+            </div>
+        </div>
+    </div>
+    <!--Re’ madeのこだわり02-->
+    <div class="kodawari-2-p">
+        <p>Re’ madeのこだわり</p> 
+        <div class="kodawari-2">
+            <img src="./assets/img/zerotwo.png" alt="02" width="156" height="129">
+        </div>
+    </div>
+    <!--丁寧で綺麗な修理-->
+    <div class="ding-ning-fix-p">
+        <p>丁寧で綺麗な修理</p>
+    </div>
+    <div class="fix-text">
+        <p>壊れた部分をしっかりと丁寧に修理するだけでなく、お客様に気持ちよ
+            くミシンをご使用してもらえるようにミシン本体とカバーの研磨にもこ
+            だわっています。</p>
+    </div>
+    <div class="mishin1">
+        <div class="mishin1-before">
+            <p>before</p>
+            <img src="./assets/img/sewing machine-1.png" alt="sewing machine_33_s 1" width="300" height="225">
+        </div>
+        <img class="Polygon1" src="./assets/img/Polygon1.png" alt="Polygon1" width="22" height="43">
+        <div class="mishin1-after">
+            <p>after</p>
+            <img src="./assets/img/sewing machine-1.png" alt="sewing machine_33_s 1" width="300" height="225">
+        </div>
+    </div>
+
+    <div class="mishin2">
+        <div class="mishin2-before">
+            <p>before</p>
+            <img src="./assets/img/sewing machine-2.png" alt="sewing machine_35_s" width="300" height="225">
+        </div>
+        <img class="Polygon2" src="./assets/img/Polygon1.png" alt="Polygon1" width="22" height="43">
+        <div class="mishin2-after">
+            <p>after</p>
+            <img src="./assets/img/sewing machine-2.png" alt="sewing machine_35_s" width="300" height="225">
+        </div>
+    </div>
+    <!--Re’ madeのこだわり03-->
+    <div class="kodawari-3-p">
+        <p>Re’ madeのこだわり</p> 
+        <div class="kodawari-3">
+            <img src="./assets/img/zerothr.png" alt="03" width="156" height="129">
+        </div>
+    </div>
+    <!--サステナビリティ-->
+    <div class="sustainability-p">
+        <p>サステナビリティ</p>
+    </div>
+    <div class="sustainability-text">
+        <p>ただ破損箇所を修理するだけではなく、お客様の今後の利用を考え、壊れやすい箇所や消耗している部品等をメンテナンスいたします。</p>
+        <p>もちろん、メンテナンスも上記費用に含まれております。</p>
+    </div>
+    <div class="sustainability-img">
+        <img class="susta-img" src="./assets/img/sewing machine_51_s 1.png" alt="sewing machine_51_s 1" width="680" height="360">
+    </div>
+
+    <!--Re’ madeのこだわり04-->
+    <div class="kodawari-4-p">
+        <p>Re’ madeのこだわり</p> 
+        <div class="kodawari-4">
+            <img src="./assets/img/zerofour.png" alt="04" width="156" height="129">
+        </div>
+    </div>
+    <!--スピード-->
+    <div class="speed-p">
+        <p>スピード</p>
+    </div>
+    <div class="speed-text">
+        <p>到着してから<span class="speed-text-col">最短１日</span>で修理を完了し、お客様のもとへ発送することが可能です。</p>
+    </div>
+    <div class="speed-img">
+        <img class="spe-img" src="./assets/img/25458738_m 1.png" alt="25458738_m 1" width="680" height="360">
+    </div>
+    <!--こんな状態お任せください-->
+    <div class="consultation-background">
+        <div class="request-p">
+            <p>こんな状態お任せください</p>
+        </div>
+        <div class="request-text">
+            <p>様々なメーカー機種の修理実績があります。</p>
+            <p>下記の他にも対応可能ですので、なんでもご相談ください。</p>
+        </div>
+        <div class="request-example-1">
+            <div class="request-picture-1">
+                <p>はずみ車が回せない</p>
+            </div>
+            <div class="request-picture-2">
+                <p>タッチパネルが<br>押せない・ずれている</p>
+            </div>
+            <div class="request-picture-3">
+                <p>スピードの調整ができない</p>
+            </div>
+        </div>
+        <div class="request-example-2">
+            <div class="request-picture-4">
+                <p>自動上糸がけができない</p>
+            </div>
+            <div class="request-picture-5">
+                <p>自動上糸がけができない</p>
+            </div>
+            <div class="request-picture-6">
+                <p>針がすぐに折れてしまう</p>
+            </div>
+        </div>
+    </div>
+    <!--LINEで無料簡易診断-->
+    <div class="free-diagnosis">
+        <div class="free-diagnosis-p">
+            <p>LINEで無料簡易診断</p>
+        </div>
+        <div class="free-diagnosis-text">
+            <p>6パターンの料金のうち、お客様の修理がどの価格になるかをLINEで簡単に診断できます。
+                まずはどの料金であるかをお知りになってから発注をご検討ください！
+                <br>※診断の結果、ご注文をお受けできない場合もございますのでご了承ください。
+            </p>
+        </div>
+        <a href="#" target="_blank"  class="free-diagnosis-button">
+            <p>無料簡易診断</p>
+        </a>
+        <div class="time-1min">
+            <img src="./assets/img/coment.png" alt="coment" width="175" height="178">
+            <p class="time-p">所要時間</p>
+            <p class="min-p">約１分</p>
+        </div>
+    </div>
+    <!--簡単な７ステップ-->
+    <div class="seven-step-backcolor">
+        <div class="seven-step-p">
+            <p>簡単な７ステップ</p>
+        </div>
+        <div class="seven-step-text">
+            <p>ミシン修理完了までのフロー</p>
+        </div>
+        <div class="step-one">
+            <p class="step-one-p">LINE登録またはメールフォームからお問い合わせ</p>
+            <img src="./assets/img/step1.png" alt="step1" width="60" height="60">
+        </div>
+        <div class="step-two">
+            <p class="step-two-p">簡単な診断と料金のご提示</p>
+            <img src="./assets/img/step2.png" alt="step2" width="60" height="60">
+        </div>
+        <div class="step-thr">
+            <p class="step-thr-p">ご発注</p>
+            <img src="./assets/img/step3.png" alt="step3" width="60" height="60">
+        </div>
+        <div class="step-four">
+            <p class="step-four-p">梱包・発送</p>
+            <img src="./assets/img/step4.png" alt="step4" width="60" height="60">
+        </div>
+        <div class="step-fiv">
+            <p class="step-fiv-p">ミシン修理</p>
+            <img src="./assets/img/step5.png" alt="step5" width="60" height="60">
+        </div>
+        <div class="step-six">
+            <p class="step-six-p">料金のお支払い</p>
+            <img src="./assets/img/step6.png" alt="step6" width="60" height="60">
+        </div>
+        <div class="step-sev">
+            <p class="step-sev-p">料金のお支払い</p>
+            <img src="./assets/img/step7.png" alt="step7" width="60" height="60">
+        </div>
+    </div>
+    <!--FAQ-->
+    <div class="faq">
+        <p class="faq-p">
+            FAQ
+        </p>
+    </div>
+    <div class="question-one">
+        <p class="question-one-p">
+            Q.発注してミシンを送ったが、修理不能だった場合はどうなるの？
+        </p>
     </div>
 </body>
 </html>
