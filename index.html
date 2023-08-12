@@ -78,13 +78,13 @@
     </p>
     <!--料金表-->
     <div class="ryokinnhyo">
-        <div class="menu-list">
-            <p class="list-1">製品サポート</p>
-            <p class="list-2">液晶</p>
-            <p class="list-3">部品交換をしない修理</p>
-            <p class="list-4">部品交換が必要な修理</p>
-        </div>
         <table class="tosou-menu">
+            <tr class="menu-list">
+                <th class="list-1">製品サポート</th>
+                <th class="list-2">液晶</th>
+                <th class="list-3">部品交換をしない修理</th>
+                <th class="list-4">部品交換が必要な修理</th>
+            </tr>
             <tr class="green-back">
                 <td class="block1">継続している機種</td>
                 <td class="block2">液晶なし</td>
@@ -134,7 +134,7 @@
                 <td class="company-a-p">A社</td>
                 <td class="company-b-p">B社</td>
             </tr>
-            <tr>
+            <tr class="item-white">
                 <td class="continue-model" rowspan="4">継続している機種</td>
                 <td class="liquid-crystal-no" rowspan="2">液晶なし</td>
                 <td class="no-p">なし</td>
@@ -144,7 +144,7 @@
                 <td class="fix--postage-b1-cost-value">¥3,240 ~
                     <br><span class="fix-postage-cost">( 修理技術料 + 送料 )</span></td>
             </tr>
-            <tr>
+            <tr class="item-white">
                 <td class="yes-p">あり</td>
                 <td class="twe-th">¥12,000</td>
                 <td class="fix-trade-a1-cost-value">¥15,000 ~ 18,000
@@ -152,7 +152,7 @@
                 <td class="trade-postage-b1-cost-value">¥6,480 ~
                     <br><span class="trade-postage-cost">( 各種部品交換代 + 送料 )</span></td>
             </tr>
-            <tr>
+            <tr class="item-white">
                 <td class="liquid-crystal-yes" rowspan="2">液晶あり</td>
                 <td class="no-p">なし</td>
                 <td class="eight-th">¥8,000</td>
@@ -161,7 +161,7 @@
                 <td class="fix--postage-b2-cost-value">¥5,400 ~<br>
                     <span class="fix-postage-cost">( 修理技術料 + 送料 )</span></td>
             </tr>
-            <tr>
+            <tr class="item-white">
                 <td class="yes-p">あり</td>
                 <td class="fif-th">¥15,000</td>
                 <td class="fix-trade-a2-cost-value">¥23,000
@@ -169,7 +169,7 @@
                 <td class="fix-postage-b2-cost-value">¥8,640 ~
                     <br><span class="trade-postage-cost">( 各種部品交換代 + 送料 )</span></td>
             </tr>
-            <tr>
+            <tr class="item-white">
                 <td class="finish-model" rowspan="2">終了している機種</td>
                 <td class="liquid-crystal-all" rowspan="2">すべて</td>
                 <td class="no-p">なし</td>
@@ -179,7 +179,7 @@
                 <td class="fix-postage-b3-cost-value">¥3,240 ~
                     <br><span class="fix-postage-cost">( 修理技術料 + 送料 )</span></td>
             </tr>
-            <tr>
+            <tr class="item-white">
                 <td class="yes-p">あり</td>
                 <td class="twefive-th">¥25,000</td>
                 <td class="fix-trade-a3-cost-value">¥15,000 ~ 23,000
@@ -217,8 +217,8 @@
             修理実績機種例
         </p>
         <div class="repair-achievements-model">
-            <div class="juki-1">
-                <p class="juki-1-p">JUKI</p>
+            <div class="juki">
+                <p class="juki-p">JUKI</p>
                 <div class="example">
                     <p>衣縫人BL34</p>
                     <p>衣縫人BL54</p>
@@ -229,8 +229,8 @@
                     <p>糸取物語 BL66</p>
                 </div>
             </div>
-            <div class="juki-2">
-                <p class="juki-2-p">JUKI</p>
+            <div class="juki">
+                <p class="juki-p">JUKI</p>
                 <div class="example">
                     <p>衣縫人BL34</p>
                     <p>衣縫人BL54</p>
@@ -241,8 +241,8 @@
                     <p>糸取物語 BL66</p>
                 </div>
             </div>
-            <div class="blother">
-                <p class="blother-p">BLOTHER</p>
+            <div class="juki">
+                <p class="juki-p">BLOTHER</p>
                 <div class="example">
                     <p>CR1000</p>
                     <p>PS-10</p>
@@ -253,8 +253,8 @@
                     <p>CENTURY7700</p>
                 </div>
             </div>
-            <div class="singer">
-                <p class="singer-p">SINGER</p>
+            <div class="juki">
+                <p class="juki-p">SINGER</p>
                 <div class="example">
                     <p>APRICOT 9700</p>
                     <p>SN771</p>
@@ -414,7 +414,7 @@
             </p>
         </div>
         <a href="#" target="_blank"  class="free-diagnosis-button">
-            <p>無料簡易診断</p>
+            無料簡易診断
         </a>
         <div class="time-1min">
             <img src="./assets/img/coment.png" alt="coment" width="175" height="178">

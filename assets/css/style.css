@@ -189,14 +189,17 @@ ul,a{
 .ryokinnhyo{
   height: auto;
 }
-
+.tosou-menu{
+  border-collapse: separate;
+  border-spacing: 5px;
+}
 .menu-list{
-  display: flex;
   font-family:Shippori Mincho;
   font-size: 1.388vw;
   margin: 1.11vw 15.208vw 0vw 15.34vw;
   text-align: center;
   background-color: #BDCDD6;
+  border-bottom: 2vw #F7F7F7;
 }
 
 .list-1{
@@ -220,6 +223,7 @@ ul,a{
   font-family:Shippori Mincho;
   font-size: 1.388vw;
   margin: 0 auto;
+  color: #3F3E44;
 }
 
 .green-back,
@@ -246,10 +250,14 @@ ul,a{
 .block3{
   width: 20.486vw;
   font-size: 1.944vw;
+  font-weight: bold;
+
 }
 .block4{
   width: 20.486vw;
   font-size: 1.944vw;
+  font-weight: bold;
+
 }
 
 /*送料・部品交換などの追加費用０円*/
@@ -301,15 +309,16 @@ ul,a{
   font-size: 1.66vw;
   text-align: center;
   margin-top: 6.944vw;
+  margin-bottom: 1.74vw;
 }
 
 /*他社との比較表②*/
-table , td, th {
-	border: 1px solid #595959;
+.comparison-chartt-slide{
 	border-collapse: collapse;
 }
 td, th {
   font-size: 1.388vw;
+  color: #3F3E44;
 }
 
 .comparison-chartt-slide{
@@ -317,13 +326,16 @@ td, th {
   text-align: center;
   border-collapse: separate;
   border-spacing: 7px 5px;
-  border-color: #ff0000;;
 }
 
 .item{
   background-color: #BDCDD6;
   height: 6.180vw;
   font-size: 1.388vw;
+}
+
+.item-white{
+  background-color: #FFFFFF;
 }
 
 .product-support-p{
@@ -374,6 +386,12 @@ td, th {
   font-size: 1.11vw;
 }
 
+.six-th,.twe-th,.eight-th,.fif-th,.twefive-th{
+  width: 18vw;
+  font-weight: 800;
+  border: left 5px #BDCDD6;
+}
+
 /*スライドして閲覧-1*/
 .slide-1{
   display: flex;
@@ -384,6 +402,7 @@ td, th {
 .slide-1 p{
   font-family:Shippori Mincho;
   font-size: 1.11vw;
+  padding: 1.875vw;
 }
 
 .slide-allow-l img,.slide-square-r img{
@@ -426,7 +445,7 @@ td, th {
   display: flex;
 }
 
-.juki-1-p,.juki-2-p,.blother-p,.singer-p,.juki-p{
+.juki{
   font-size: 1.66vw;
   font-family: Shippori Mincho;
   background-color: #BDCDD6;
@@ -750,15 +769,16 @@ td, th {
   font-family: Shippori Mincho;
   font-size: 1.388vw;
   margin-bottom: 4.166vw;
+  margin: 0 auto;
 }
 
 .free-diagnosis-button{
-  display: inline-block;
+  display: block;
   width: 45.42vw;
-  height: 5.55vw;
   background-color:#E96479;
   text-decoration: none;
   text-align: center;
+  margin: 0 auto;
 }
 
 .free-diagnosis-button p{
