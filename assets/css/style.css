@@ -409,6 +409,10 @@ td, th {
   margin: 0.208vw;
 }
 
+.slide-1 img{
+  padding-top: 0.527vw;
+}
+
 /*10年以上・累計1万台を超える修理実績*/
 .repair-achievements-background{
   background-color: #EEE9DA;
@@ -445,7 +449,7 @@ td, th {
   display: flex;
 }
 
-.juki{
+.juki,.juki-2{
   font-size: 1.66vw;
   font-family: Shippori Mincho;
   background-color: #BDCDD6;
@@ -454,14 +458,23 @@ td, th {
   text-align: center;
 }
 
-.example{
+.juki-2{
+  margin-left: 1.388vw;
+}
+
+.juki-p{
+  padding: 2.02vw 0;
+}
+
+.example,.example-2{
   background-color: #FFFFFF;
-  width: 21.53vw;
+  width: 19.87vw;
   height: auto;
   font-size: 1.388vw;
   font-family: Shippori Mincho;
-  padding: 1.944vw 1.66vw;
   margin-top: 5px;
+  text-align: left;
+  padding: 1.944vw 0 1.944vw 1.66vw;
 }
 
 /*スライドして閲覧-2*/
@@ -673,77 +686,41 @@ td, th {
   margin-top: 2.77vw;
 }
 
-.request-picture-1 p{
-  width: 22.2vw;
-  height: 16.6vw;
-  background-image:url(../img/sewing\ machine_36_s.png);
-  background-size: 22.2vw 16.6vw;
-  font-family: Shippori Mincho;
-  font-size: 1.66vw;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-.request-picture-2 p{
-  width: 22.2vw;
-  height: 16.6vw;
-  background-image:url(../img/sewing\ machine_36_s-2.png);
-  background-size: 22.2vw 16.6vw;
-  font-family: Shippori Mincho;
-  font-size: 1.66vw;
-  color: #FFFFFF;
-  font-weight: bold;
+.request-picture-1,.request-picture-3,.request-picture-4,.request-picture-6{
   text-align: center;
-  margin-left: 1.25vw;
-  margin-right: 1.25vw;
+  position: relative;
 }
 
-.request-picture-3 p{
-  width: 22.2vw;
-  height: 16.6vw;
-  background-image:url(../img/sewing\ machine_36_s-3.png);
-  background-size: 22.2vw 16.6vw;
+.request-picture-1 p,.request-picture-3 p,.request-picture-4 p,.request-picture-6 p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   font-family: Shippori Mincho;
   font-size: 1.66vw;
   color: #FFFFFF;
   font-weight: bold;
 }
 
-.request-picture-4 p{
-  width: 22.2vw;
-  height: 16.6vw;
-  background-image:url(../img/sewing\ machine_36_s-4.png);
-  background-size: 22.2vw 16.6vw;
-  font-family: Shippori Mincho;
-  font-size: 1.66vw;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-.request-picture-5 p{
-  width: 22.2vw;
-  height: 16.6vw;
-  background-image:url(../img/sewing\ machine_36_s-5.png);
-  background-size: 22.2vw 16.6vw;
-  font-family: Shippori Mincho;
-  font-size: 1.66vw;
-  color: #FFFFFF;
-  font-weight: bold;
+.request-picture-2,.request-picture-5{
   text-align: center;
-  margin-left: 1.25vw;
-  margin-right: 1.25vw;
+  position: relative;
+  margin: 0 1.25vw;
 }
 
-.request-picture-6 p{
-  width: 22.2vw;
-  height: 16.6vw;
-  background-image:url(../img/sewing\ machine_36_s-6.png);
-  background-size: 22.2vw 16.6vw;
+.request-picture-2 p,.request-picture-5 p{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   font-family: Shippori Mincho;
   font-size: 1.66vw;
   color: #FFFFFF;
   font-weight: bold;
 }
+
 
 /*LINEで無料簡易診断*/
 .free-diagnosis{
@@ -779,12 +756,12 @@ td, th {
   text-decoration: none;
   text-align: center;
   margin: 0 auto;
-}
 
-.free-diagnosis-button p{
   color: #FFFFFF;
   font-family: Shippori Mincho;
   font-size: 1.66vw;
+  padding: 1.875vw 0;
+  margin-top: 4.166vw;
 }
 
 .time-1min img{
