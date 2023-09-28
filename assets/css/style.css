@@ -10,13 +10,15 @@ hr{
 body{
   margin: 0%;
   counter-reset: number 0;
-  background-color: #F7F7F7
+  background-color: #F7F7F7;
+  overflow-x: hidden;
 }
 p{
     margin: 0;
 }
 ul,a{
   margin: 0%;
+  padding:0%;
 }
 
 /*ヘッダー*/
@@ -27,6 +29,61 @@ ul,a{
   background-size: 100vw 43.388vw;
   padding-top: 2.77vw;
   position: relative;
+}
+@media screen and (max-width:768px){
+  .fmv{
+      background-size: auto 106.67vw;
+      height: 103.67vw;
+      background-position: -290px 0;
+  }
+}
+
+.fmv-sp{
+  background-color: #EEE9DA;
+  width: 100vw;
+  height: 21.33vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fmv-sp img{
+  margin: 5.866vw 0 3.47vw 10.67vw; 
+}
+
+.header-menu{
+  margin-right: 9.33vw;
+}
+
+.header-menu-1{
+  border: solid 1.0px #000000;
+  width: 20px;
+  margin-top: 7.47vw;
+  border-radius: 100px;
+}
+
+.header-menu-2{
+  border: solid 1.0px #000000;
+  width: 32px;
+  margin: 2.13vw 0;
+  border-radius: 100px;
+}
+
+.header-menu-3{
+  border: solid 1.0px #000000;
+  width: 32px;
+  margin-bottom: 1.6vw;
+  border-radius: 100px;
+}
+
+.header-menu p{
+  font-family: Shippori Mincho;
+  font-size: 2.66vw;
+}
+
+@media screen and (min-width: 768px) {
+  .fmv-sp {
+   display: none;
+ }
 }
 
 .menu{
@@ -40,36 +97,74 @@ ul,a{
   color: white;
   text-decoration: none;
 }
-
-.catchcopy-1{
-  background-color:#EEE9DA;
-  width: 53.611vw;
-  height: 5.55vw;
-  margin: 11.11vw 31.04vw 0 15.55vw;
+@media screen and (max-width: 768px) {
+  .menu {
+   display: none;
+ }
 }
-
 .catchcopy-1 p{
+  background-color:#EEE9DA;
   font-size: 2.77vw;
   text-align: center;
   font-family:Shippori Mincho;
-  font-weight:bold
+  font-weight:bold;
+  margin: 11.11vw 31.04vw 0 15.55vw;
+  padding: 0.694vw 1.389vw;
 }
-
-.catchcopy-2{
+@media screen and (max-width: 768px) {
+  .catchcopy-1,.catchcopy-2{
+   display: none;
+ }
+}
+.catchcopy-2 img{
   background-color:#EEE9DA;
   width: 24.30vw;
   height: 5.55vw;
-  margin: 1.388vw 60.347vw 15.694vw 15.55vw;
-}
-
-.catchcopy-2 img{
-  width: 24.30vw;
-  height: 5.55vw;
   position: absolute;
-  top: 23vw;
-  left: 15.5vw;
+  margin: 1.388vw 60.347vw 15.694vw 15.55vw;
+  padding: 0.694vw 1.389vw;
+}
+@media screen and (max-width: 768px) {
+  .catchcopy-1,.catchcopy-2{
+   display: none;
+ }
+ .catchcopy-1-sp{
+  background-color: #EEE9DAB2;
+  width: 68vw;
+  text-align: center;
+  margin: 69.86vw 24.27vw 0 7.73vw;
+ }
+ .catchcopy-1-sp p{
+  font-family:Shippori Mincho;
+  font-weight:bold;
+  font-size: 5.33vw;
+  padding: 2.66vw 0;
+ }
+ .catchcopy-2-sp{
+  background-color: #EEE9DAB2;
+  width: 84.53vw;
+  display: flex;
+  justify-content: center;
+  margin: 2.133vw 7.73vw 8vw 7.73vw;
+}
+ .catchcopy-2-sp p{
+  font-family:Shippori Mincho;
+  font-weight:bold;
+  font-size: 5.33vw;
+  padding: 2.66vw 0;
+ }
+ .catchcopy-2-sp img{
+  width: 40vw;
+  height: 8.533vw;
+  padding: 2.66vw 0;
+ }
 }
 
+@media screen and (min-width: 768px) {
+  .catchcopy-1-sp,.catchcopy-2-sp{
+   display: none;
+ }
+}
 /*4つのポイント*/
 .point{
   display: flex;
@@ -79,7 +174,10 @@ ul,a{
 
 .blue-circle{
   position: relative;
+  width: 15.97vw;
+  height: 15.97vw;
 }
+
 .circle1 p,.circle2 p{
   font-family: Shippori Mincho;
   color: #FFFFFF;
@@ -121,6 +219,29 @@ ul,a{
   top: 6.0vw;
   left:5vw;
 }
+@media screen and (max-width: 768px) {
+  .point{
+    margin: 1.6vw 0 1.6vw 0;
+  }
+  .blue-circle img{
+    position: relative;
+    width: 18.66vw;
+    height: 18.66vw;
+  }
+  .circle1 p,.circle2 p{
+    width: 6.33vw;
+    font-size: 2.933vw;
+    top: 5.5vw;
+    left:6.5vw;
+  }
+  .circle3 p,.circle4 p{
+    width: 14.13vw;
+    font-size: 2.4vw;
+    text-align: center;
+    top: 5.5vw;
+    left:2.5vw;
+  }
+}
 
 /*CTA*/
 .cta{
@@ -143,7 +264,23 @@ ul,a{
   width: 2.77vw;
   height: auto;
 }
-
+@media screen and (max-width: 768px) {
+  .cta{
+    height: 21.33vw;
+    background-color: #EEE9DA;
+    background-size: 100vw 21.33vw;
+  }
+  
+  .cta p{
+    font-size: 6.4vw;
+    margin-right: 2.66vw;
+  }
+  
+  .cta img{
+    width: 8vw;
+    height: auto;
+  }
+}
 /*こだわり1*/
 .kodawari-p{
   display: flex;
@@ -157,7 +294,19 @@ ul,a{
   font-size: 2.77vw;
   color: #6096B4;
 }
-
+@media screen and (max-width: 768px) {
+  .kodawari-p{
+    margin-top: 21.33vw;
+  }
+    .kodawari-p p{
+    font-size: 6.4vw;
+    color: #6096B4;
+  }
+  .kodawari-1 img{
+    width: 16.53vw;
+    height: 17.06vw;
+  }
+}
 /*明確で分かりやすい料金体系*/
 .cost-plan-p{
   text-align: center;
@@ -168,13 +317,23 @@ ul,a{
   width: 22.5vw;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 768px) {
+  .cost-plan-p{
+    font-size: 4.27vw;
+    background: linear-gradient(transparent 60%, #C7D9EA99 30%);
+    width: 57.6vw;
+  }
+}
 /*ミシン修理プランは以下の6つだけ*/
 .sewing-machine-plan{
+  display: flex;
+  justify-content: center;
+  margin-top: 4.027vw;
+}
+.sewing-text{
   font-family: Shippori Mincho;
   font-size: 1.66vw;
-  text-align: center;
-  margin-top: 4.027vw;
+  padding-top: 2.2vw;
 }
 .six{
   font-family: Shippori Mincho;
@@ -182,9 +341,21 @@ ul,a{
 }
 .tu{
   font-family: Shippori Mincho;
-  font-size: 2.22 vw;
+  font-size: 2.22vw;
+  padding-top: 1.8vw;
 }
-
+@media screen and (max-width: 768px) {
+  .sewing-text{
+    font-size: 3.733vw;
+    margin-top: 18.66vw;
+  }
+  .six{
+    font-size: 8.53vw;
+  }
+  .tu{
+    font-size: 6.53vw;
+  }
+}
 /*料金表*/
 .ryokinnhyo{
   height: auto;
@@ -192,6 +363,10 @@ ul,a{
 .tosou-menu{
   border-collapse: separate;
   border-spacing: 5px;
+  font-family:Shippori Mincho;
+  font-size: 1.388vw;
+  margin: 0 auto;
+  color: #3F3E44;
 }
 .menu-list{
   font-family:Shippori Mincho;
@@ -219,14 +394,6 @@ ul,a{
   height: 6.180vw;
 }
 
-.tosou-menu{
-  font-family:Shippori Mincho;
-  font-size: 1.388vw;
-  margin: 0 auto;
-  color: #3F3E44;
-}
-
-.green-back,
 .white-back{
   text-align: center;
   height: auto;
@@ -247,17 +414,91 @@ ul,a{
   width: 11.94vw;
 }
 
-.block3{
+.block3,.block4{
   width: 20.486vw;
   font-size: 1.944vw;
   font-weight: bold;
-
 }
-.block4{
-  width: 20.486vw;
-  font-size: 1.944vw;
-  font-weight: bold;
 
+@media screen and (min-width: 768px) {
+  .slide-sp{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ryokinnhyo {
+    overflow-x: scroll;
+  }
+  .tosou-menu{
+    border-spacing: 5px;
+  }
+  .menu-list{
+    font-size: 5.33vw;
+    margin: 5.33vw 0vw 0vw 0vw;
+    border-bottom: 2vw #F7F7F7;
+    white-space: nowrap;
+  }
+  
+  .list-1{
+    width: 58.66vw;
+    height: 23.73vw;
+    padding: 0 12.53vw;
+  }
+  .list-2{
+    width: 45.87vw;
+    height: 23.73vw;
+    padding: 0 16.53vw;
+  }
+  .list-3,.list-4{
+    width: 78.67vw;
+    height: 23.73vw;
+    padding: 0 12.53vw;
+  }
+  .white-back{
+    margin: 0 15.208vw 0 15.34vw;
+  }
+  
+  .block1,.block2,.block3{
+    height: 6.944vw;
+    margin-right: 1vw;
+    padding: 8vw 0;
+    font-size: 5.33vw ;
+  }
+  .block1{
+    width: 15.277vw;
+  }
+  .block2{
+    width: 11.94vw;
+  }
+  
+  .block3{
+    width: 20.486vw;
+    font-size: 1.944vw;
+    font-weight: bold;
+    font-size: 5.33vw ;
+  }
+  .block4{
+    width: 20.486vw;
+    font-size: 1.944vw;
+    font-weight: bold;
+    font-size: 5.33vw ;
+  }
+
+  .slide-sp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide-sp p {
+    font-family: Shippori Mincho;
+    font-size: 2.66vw;
+    padding: 1.875vw;
+}
+  .slide-sp img{
+    padding-top: 1.875vw;
+    height: 3.733vw;
+  }
 }
 
 /*送料・部品交換などの追加費用０円*/
@@ -268,23 +509,88 @@ ul,a{
   margin: 7.0138vw 56.5vw 0 31.388vw;
 }
 
-.hukidashi{
+.hukidashi-img{
   margin: 0 56.19vw 0 31.2vw;
 }
 
+@media screen and (max-width: 768px) {
+  .hukidashi-p{
+    font-size: 4.266vw;
+    margin: 21.33vw 39.466vw 0 17.87vw;
+  }
+  .hukidashi-img{
+    width: 53.33vw;
+    height: 9.066vw;
+    margin: 0 56.19vw 0 13.2vw;
+  }
+  .hukidashi{
+    margin: 0 34.933vw 0 11.733vw;
+  }
+}
 /*送料・部品交換などの追加費用０円*/
-.addition-cost-p{
+.addition-cost{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.addition-cost2{
+  display: flex;
+}
+.vector{
+  width: 33.75vw;
+  height: auto;
+  position: absolute;
+  top: 2vw;
+  left: 32.5vw;
+  z-index: -2;
+}
+
+.addition-cost-p1,.addition-cost-p2{
   font-family: Shippori Mincho;
   font-size: 1.66vw;
-  text-align: center;
+  padding-top: 1.5vw;
 }
 .zero{
-  color: #C5A042;
-  font-size: 4.44vw;
+  width: 64px;
+  height: 93px;
+}
+@media screen and (max-width: 768px) {
+  .addition-cost{
+    display: block;
+  }
+
+  .addition-cost2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .vector{
+    width: 36vw;
+    height: 5.33vw;
+    top: 22vw;
+    left: 32.5vw;
+    z-index: -2;
+  }
+
+  .addition-cost-p1,.addition-cost-p2{
+    font-size: 5.33vw;
+  }
+
+  .addition-cost-p1{
+    width: 100%;
+    text-align: center;
+  }
+  .zero{
+    width: 45px;
+    height: 65px;
+  }
+.addition-cost-p2{
+  padding-top: 10vw;
+}
 }
 
 /*他社との比較表①*/
-.comparison-chartt-p1,.comparison-chartt-p2,.comparison-chartt-p3{
+.comparison-chartt-p1,.comparison-chartt-p2{
   font-size: 1.388vw;
   font-family: Shippori Mincho;
   text-align: center
@@ -294,14 +600,19 @@ ul,a{
 }
 
 .red-p{
-  font-weight: 500;
+  font-weight: bold;
   color: #E96479;
 }
 
-.comparison-chartt-pic{
+.comparison-chart-pic{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.comparison-chart-picture{
   width: 33.402vw;
   height: auto;
-  margin: 2.916vw auto 0;
+  margin-top: 2.916vw;
 }
 
 .slide-p{
@@ -311,87 +622,78 @@ ul,a{
   margin-top: 6.944vw;
   margin-bottom: 1.74vw;
 }
+@media screen and (max-width: 768px) {
+  .comparison-chartt-p1,.comparison-chartt-p2{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comparison-chart-sp{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .comparison-chart-sp{
+    font-family: Shippori Mincho;
+    font-size: 3.733vw;
+    width: 76.46vw;
+    text-align: left; 
+    margin: 0 auto;
+    margin-top: 5.33vw;
+  }
+  .comparison-chartt-p1{
+    margin-top: 3.263vw;
+  }
+  
+  .red-p{
+    font-weight: bold;
+    color: #E96479;
+  }
+  
+  .comparison-sp2{
+    font-size: 5.33vw;
+    font-weight: bold;
+    color: #E96479;
+  }
+
+  .comparison-chart-picture{
+    width: 81.86vw;
+    margin-top: 10.66vw;
+  }
+  
+  .slide-p{
+    width: 50vw;
+    font-size: 1.66vw;
+    text-align: center;
+    margin: 6.944vw auto 1.74vw;
+  }
+}
 
 /*他社との比較表②*/
-.comparison-chartt-slide{
-	border-collapse: collapse;
-}
-td, th {
-  font-size: 1.388vw;
-  color: #3F3E44;
-}
-
-.comparison-chartt-slide{
-  font-family:Shippori Mincho;
-  text-align: center;
-  border-collapse: separate;
-  border-spacing: 7px 5px;
+.comparison-chart-slide{
+  background-color: #EBEEF3;
+  width: 100%;
+  height: 46.04vw;
+  margin-left: 2.43vw;
+  overflow-x: scroll;
 }
 
-.item{
-  background-color: #BDCDD6;
-  height: 6.180vw;
-  font-size: 1.388vw;
+.comparison-chart{
+  width: 110.14vw;
+  height: 46.04vw;
+  flex-shrink: 0;
 }
-
-.item-white{
-  background-color: #FFFFFF;
-}
-
-.product-support-p{
-  width: 15.277vw;
-}
-
-.liquid-crystal-p{
-  width: 11.81vw;
-}
-
-.parts-trade-fix-p{
-  width: 20.277vw
-}
-
-.re-made-p{
-  width: 20.27vw;
-  font-size: 2.22vw;
-}
-
-.company-a-p,.company-b-p{
-  width: 23.64vw
-}
-
-.continue-model{
-  height: 26.694vw;
-  font-size: 1.388vw;
-}
-
-.finish-model{
-  height: 12.71vw;
-  font-size:1.388vw;
-}
-
-.liquid-crystal-no,.liquid-crystal-yes,.liquid-crystal-all{
-  height: 12.71vw;
-  font-size: 1.388vw;
-}
-
-.no-p,.yes-p{
-  font-size: 1.388vw;
-}
-
-.six-th,.twe-th,.eight-th,.fif-th,.twefive-th{
-  font-size: 2.22vw;
-}
-
-.fix-cost,.fix-trade-cost,.fix-postage-cost,.trade-postage-cost,.fix-trade-postage-cost{
-  font-size: 1.11vw;
-}
-
-.six-th,.twe-th,.eight-th,.fif-th,.twefive-th{
-  width: 18vw;
-  font-weight: 800;
-  border: left 5px #BDCDD6;
-}
-
+@media screen and (max-width: 768px) {
+  .comparison-chart-slide{
+    height: 97.06vw;
+  }
+  
+  .comparison-chart{
+    width: 232.8vw;
+    height: 97.06vw;
+    margin-left: 10.4vw;
+  }
+} 
 /*スライドして閲覧-1*/
 .slide-1{
   display: flex;
@@ -412,12 +714,31 @@ td, th {
 .slide-1 img{
   padding-top: 0.527vw;
 }
-
+@media screen and (max-width: 768px) {
+  .slide-1{
+    margin-top: 5.33vw;
+  }
+  .slide-1 p{
+    font-size: 2.66vw;
+    padding: 1.875vw;
+  }
+  .slide-allow-l img,.slide-allow-r img{
+    width: 2.133vw;
+  }
+  .slide-square-l img,.slide-square-r img{
+    margin: 0.208vw;
+  }
+  
+  .slide-1 img{
+    padding-top: 1.875vw;
+    height: 3.733vw;
+  }
+}
 /*10年以上・累計1万台を超える修理実績*/
 .repair-achievements-background{
   background-color: #EEE9DA;
   width: 100vw;
-  height: 69.16vw;
+  height: 50.3vw;
   margin-top: 5.55vw;
   padding-top: 5.55vw;
 }
@@ -427,6 +748,7 @@ td, th {
   font-family:Shippori Mincho;
   text-align: center;
   color: #6096B4;
+  font-weight: bold;
 }
 
 .repair-text{
@@ -447,6 +769,8 @@ td, th {
 
 .repair-achievements-model{
   display: flex;
+  height: 25.29vw;
+  overflow-x: scroll;
 }
 
 .juki,.juki-2{
@@ -476,23 +800,103 @@ td, th {
   text-align: left;
   padding: 1.944vw 0 1.944vw 1.66vw;
 }
-
+@media screen and (max-width: 768px) {
+  .repair-achievements-background{
+    height: 166.4vw;
+    margin-top: 21.33vw;
+    padding-top: 10.66vw;
+  }
+  
+  .repair-p{
+    width: 68vw;
+    font-size: 6.4vw;
+    margin: 0 auto;
+  }
+  
+  .repair-text{
+    font-size: 3.733vw;
+    width: 75vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5.33vw;
+  }
+  
+  .repair-achievements-model-p{
+    font-size: 5.33vw;
+    margin-top: 16vw;
+    margin-bottom: 5.33vw;
+  }
+  
+  .repair-achievements-model{
+    display: flex;
+    height: 116.533vw;
+  }
+  
+  .juki,.juki-2{
+    font-size: 5.66vw;
+    width: 77.6vw;
+    height: 23.056vw;
+  }
+  
+  .juki-2{
+    margin-left: 5.008vw;
+  }
+  
+  .juki-p{
+    padding: 7.2vw 0;
+  }
+  
+  .example,.example-2{
+    width: 71.117vw;
+    height: auto;
+    font-size: 4.8vw;
+    margin-top: 6.25px;
+    padding: 7.016vw 0 7.266vw 6.011vw;
+  }
+}
 /*スライドして閲覧-2*/
 .slide-2{
   display: flex;
   justify-content: center;
   align-items:center;
-  margin-top: 1.388vw;
+
+  background-color: #EEE9DA;
+  padding: 1.11vw 0 5.55vw 0;
 }
 .slide-2 p{
   font-family:Shippori Mincho;
   font-size: 1.11vw;
+  padding: 1.875vw;
 }
 
-.slide-allow-l img,.slide-square-r img{
+.slide-allow-l img,.slide-allow-r img{
+  width: 2.133vw;
+}
+.slide-square-l img,.slide-square-r img{
   margin: 0.208vw;
 }
 
+.slide-2 img{
+  padding-top: 0.527vw;
+}
+@media screen and (max-width: 768px) {
+  .slide-2{
+    padding: 5.33vw 0 10.66vw 0;
+  }
+  .slide-2 p{
+    font-size: 2.66vw;
+    padding: 1.875vw;
+  }
+  
+  .slide-allow-l img,.slide-square-r img{
+    margin: 0.208vw;
+  }
+  
+  .slide-2 img{
+    padding-top: 1.875vw;
+    height: 3.733vw;
+  }
+}
 /*Re’ madeのこだわり02*/
 .kodawari-2-p{
   display: flex;
@@ -505,6 +909,18 @@ td, th {
   font-family: Shippori Mincho;
   font-size: 2.77vw;
   color: #6096B4;
+}
+@media screen and (max-width: 768px) {
+  .kodawari-2-p{
+    margin-top: 15.2vw;
+  }
+  .kodawari-2-p p{
+    font-size: 6.4vw;
+  }
+  .kodawari-2-p img{
+    width: 20.8vw;
+    height: 17.066vw;
+  }
 }
 
 /*丁寧で綺麗な修理*/
@@ -561,7 +977,59 @@ td, th {
   width: 20.83vw;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .ding-ning-fix-p{
+    font-size: 3.73vw;
+    width: 30.82vw;
+    margin: 0 auto;
+  }
+  
+  .fix-text{
+    font-size: 3.73vw;
+    width: 76.22vw;
+    height: auto;
+    margin: 10.66vw 0 0 13.6vw;
+  }
+  
+  .mishin1,.mishin2{
+    display: block;
+    text-align: center;
+  }
+  
+  .mishin1-before p{
+    margin-top: 10.66vw;
+  }
 
+  .mishin2{
+    margin-top: 26.933vw;
+  }
+  
+  .mishin1-before p,.mishin2-before p{
+    font-size: 4.266vw;
+    text-align: center;
+  }
+  
+  .mishin1-before img,.mishin2-before img{
+    width: 80vw;
+    height: auto;
+  }
+  
+  .Polygon1,.Polygon2{
+    margin: 4vw 0vw;
+    transform: rotate(90deg);
+  }
+  
+  .mishin1-after p,.mishin2-after p{
+    font-size: 4.266vw;
+    color: #6096B4;
+    text-align: center;
+  }
+  
+  .mishin1-after img,.mishin2-after img{
+    width: 80vw;
+    height: auto;
+  }
+}
 /*Re’ madeのこだわり03*/
 .kodawari-3-p{
   display: flex;
@@ -575,7 +1043,18 @@ td, th {
   font-size: 2.77vw;
   color: #6096B4;
 }
-
+@media screen and (max-width: 768px) {
+  .kodawari-3-p{
+    margin-top: 15.2vw;
+  }
+  .kodawari-3-p p{
+    font-size: 6.4vw;
+  }
+  .kodawari-3-p img{
+    width: 20.8vw;
+    height: 17.066vw;
+  }
+}
 /*サステナビリティ*/
 .sustainability-p{
   text-align: center;
@@ -605,7 +1084,31 @@ td, th {
   height: auto;
   margin-top: 1.53vw;
 }
-
+@media screen and (max-width: 768px) {
+  .sustainability-p{
+    font-size: 3.73vw;
+    width: 30.82vw;
+    margin: 0 auto;
+  }
+  
+  .sustainability-text{
+    font-size: 3.733vw;
+    width: 75.22vw;
+    height: auto;
+    margin: 11.46vw 0 0 10.933vw;
+  }
+  
+  .sustainability-img{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .susta-img{
+    width: 80vw;
+    height: auto;
+    margin-top: 5.33vw;
+  }
+}
 /*Re’ madeのこだわり04*/
 .kodawari-4-p{
   display: flex;
@@ -618,6 +1121,18 @@ td, th {
   font-family: Shippori Mincho;
   font-size: 2.77vw;
   color: #6096B4;
+}
+@media screen and (max-width: 768px) {
+  .kodawari-4-p{
+    margin-top: 15.2vw;
+  }
+  .kodawari-4-p p{
+    font-size: 6.4vw;
+  }
+  .kodawari-4-p img{
+    width: 20.8vw;
+    height: 17.066vw;
+  }
 }
 
 /*スピード*/
@@ -657,12 +1172,44 @@ td, th {
   margin-bottom: 15.35vw;
 }
 
+@media screen and (max-width: 768px) {
+  .speed-p{
+    font-size: 3.73vw;
+    background: linear-gradient(transparent 60%, #C7D9EA99 30%);
+    width: 15.88vw;
+    margin: 0 auto;
+  }
+  
+  .speed-text{
+    font-size: 3.733vw;
+    width: 71.22vw;
+    height: auto;
+    margin: 11.46vw 0 0 10.933vw;
+  }
+  
+  .speed-text-col{
+    font-size: 3.733vw;
+  }
+  
+  .speed-img{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .spe-img{
+    width: 80vw;
+    height: auto;
+    margin-top: 5.33vw;
+    margin-bottom: 21.33vw;
+  }
+}
 /*こんな状態お任せください*/
 
 .consultation-background{
   width: 100vw;
-  height: 58.27vw;
+  height:auto;
   background-color: #FFFFFF;
+  padding-bottom: 5.55vw;
 }
 
 .request-p{
@@ -680,18 +1227,19 @@ td, th {
   margin-top: 2.77vw;
 }
 
-.request-example-1,.request-example-2{
+.request-example{
   display: flex;
   justify-content: center;
   margin-top: 2.77vw;
 }
 
-.request-picture-1,.request-picture-3,.request-picture-4,.request-picture-6{
+.request-picture-1{
   text-align: center;
   position: relative;
 }
 
-.request-picture-1 p,.request-picture-3 p,.request-picture-4 p,.request-picture-6 p{
+.request-picture-1 p{
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -703,15 +1251,16 @@ td, th {
   font-weight: bold;
 }
 
-.request-picture-2,.request-picture-5{
+.request-picture-2{
   text-align: center;
   position: relative;
   margin: 0 1.25vw;
 }
 
-.request-picture-2 p,.request-picture-5 p{
+.request-picture-2 p{
+  width: 100%;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -720,7 +1269,86 @@ td, th {
   color: #FFFFFF;
   font-weight: bold;
 }
+@media screen and (min-width: 768px) {
+  .request-example-sp{
+   display: none;
+ }
+}
+@media screen and (max-width: 768px) {
+  .consultation-background{
+    padding-bottom: 21.33vw;
+  }
+  
+  .request-p{
+    font-size: 5.33vw;
+    padding-top: 10.66vw;
+  }
+  
+  .request-text{
+    font-size: 3.733vw;
+    margin-top: 5.33vw;
+  }
+  
+  .p2{
+    width: 58.66vw;
+    margin: 0 auto;
+  }
 
+  .request-example{
+    display: none;
+  }
+  .request-example-sp{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.4vw;
+  }
+  .request-picture-sp-1{
+    position: relative;
+    text-align: center
+  }
+  .request-picture-sp-1 img{
+    text-align: center;
+    width: 38.13vw;
+    height: 28.53vw;
+  }
+  
+  .request-picture-sp-1 p{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    font-family: Shippori Mincho;
+    font-size: 1.66vw;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  
+  .request-picture-sp-2{
+    position: relative;
+    text-align: center;
+  }
+  .request-picture-sp-2 img{
+    text-align: center;
+    width: 38.13vw;
+    height: 28.53vw;
+    margin-left: 2.4vw;
+  }
+  
+  .request-picture-sp-2 p{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    font-family: Shippori Mincho;
+    font-size: 1.66vw;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+}
 
 /*LINEで無料簡易診断*/
 .free-diagnosis{
@@ -732,10 +1360,11 @@ td, th {
 }
 
 .free-diagnosis-p{
+  display: flex;
+  justify-content: center;
   font-family: Shippori Mincho;
   font-size: 2.77vw;
   color: #6096B4;
-  text-align: center;
   padding-top: 11.18vw;
   margin-bottom: 2.77vw;
 }
@@ -802,12 +1431,69 @@ td, th {
          0px 1px 0px #BDCDD6,  0px -1px 0px #BDCDD6;
   margin: 0;
 }
-
+@media screen and (max-width: 768px) {
+  .free-diagnosis{
+    width: 100vw;
+    height: 101.06vw;
+    margin: 0 auto;
+  }
+  
+  .free-diagnosis-p{
+    display: block;
+    font-size: 5.33vw;
+    margin: 0 0 8.266vw 18.4vw;
+  }
+  
+  .free-diagnosis-text{
+    width: 77.8vw;
+    height:auto;
+    font-size: 3.733vw;
+    margin: 0 auto;
+  }
+  
+  .free-diagnosis-button{
+    display: block;
+    width: 81.06vw;
+    height: 21.33vw;
+  
+    font-size: 5.33vw;
+    padding: 0;
+    margin-top: 5.33vw;
+  }
+  .free-diagnosis-button p{
+    padding-top: 7.2vw;
+  }
+  .time-1min img{
+    width: 31.2vw;
+    height: 30.66vw;
+    position: absolute;
+    top: 5vw;
+    left: 51vw;
+    z-index: 2;
+  }
+  
+  .time-p{
+    font-size: 3.733vw;
+    top: 8vw;
+    left: 56.3vw;
+  }
+  
+  .min-p{
+    font-size: 5.33vw;
+    top: 13.5vw;
+    left: 56.3vw;
+  }
+  
+  .time-p,.min-p{
+    padding: 10px;
+  }
+}
 /*簡単な７ステップ*/
 .seven-step-backcolor{
-background-color: #EEE9DA;
-width: 100vw;
-height: 93.68vw;
+  background-color: #EEE9DA;
+  width: 100vw;
+  height: 93.68vw;
+  padding-bottom: 5.55vw;
 }
 
 .seven-step-p{
@@ -826,35 +1512,148 @@ height: 93.68vw;
   margin-bottom: 5.55vw;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: .6;
+  display: none;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-step-one{
+  width: 69.44vw;
+  height: 13.88vw;
+  display: flex;
+  display: none;
+}
+
+.overlay.open {
+  display: block;
+}
+.modal-step-one.open {
+  display: block;
+}
 .step-one{
   width: 60.42vw;
-  height: 7.432vw;
+  height: auto;
   background-color: #FFFFFF;
-  text-align: right;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-two,.step-thr,.step-four,.step-fiv,.step-six,.step-sev{
+  width: 60.42vw;
+  height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.264vw;
+}
+
+.icon-step{
+  margin: -0.75vw 0 0 2.77vw;
+  width: 5.55vw;
+  height: 6.32vw;
 }
 
 .step-one-p,.step-two-p,.step-thr-p,.step-four-p,.step-fiv-p,.step-six-p,.step-sev-p{
   font-family: Shippori Mincho;
   font-size: 1.66vw;
+  padding: 2.638vw 0;
 }
 
-.step-one img,.step-two img,.step-thr img,.step-four img,.step-fiv img,.step-six img,.step-sev img{
+.mishin-icon{
   width: 4.166vw;
   height: 4.166vw;
   margin-right: 2.92vw;
+  padding: 1.388vw 0;
 }
+@media screen and (max-width: 768px) {
+    .seven-step-backcolor{
+      display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+  .seven-step-backcolor-sp{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+    .seven-step-backcolor-sp{
+      background-color: #EEE9DA;
+      width: 100vw;
+      height: 459.46vw;
+      padding-bottom: 10.66vw;
+    }
+    
+    .seven-step-p{
+      font-size: 6.4vw;
+      padding-top: 10.66vw;
+    }
+    
+    .seven-step-text{
+      font-size: 3.73vw;
+      margin-top: 2.66vw;
+      margin-bottom: 10.66vw;
+    }
+    
+    .step-one{
+      width: 80vw;
+      height: 54.66vw;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: block;
+    }
+    .step-sp{
+      display: flex;
+    }
 
-.step-two,.step-thr,.step-four,.step-fiv,.step-six,.step-sev{
-  width: 60.42vw;
-  height: 7.432vw;
-  background-color: #FFFFFF;
-  text-align: right;
-  margin: 0 auto;
-  margin-top: 3.264vw;
+    .step-two,.step-thr,.step-four,.step-fiv,.step-six,.step-sev{
+      width: 80vw;
+      height: 54.66vw;
+      background-color: #FFFFFF;
+      text-align: center;
+      display: block;
+      margin-top: 7.2vw;
+    }
+    
+    .icon-step{
+      margin: -1.75vw 0 0 5.33vw;
+      width: 18.13vw;
+      height: 20.533vw;
+    }
+    
+    .step-one-p,.step-two-p,.step-thr-p,.step-four-p,.step-fiv-p,.step-six-p,.step-sev-p{
+      font-family: Shippori Mincho;
+      font-size: 4.266vw;
+      width: 58.66vw;
+      padding-top: 5.33vw;
+      margin: 0 auto;
+    }
+    
+    .mishin-icon{
+      width: 21.33vw;
+      height: 21.33vw;
+      margin: 8vw 0 0 5.866vw;
+    }
 }
 
 /*FAQ*/
+.faq-section{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5.55vw;
+}
+
 .faq-p{
   font-family: Shippori Mincho;
   font-size: 2.77vw;
@@ -863,17 +1662,223 @@ height: 93.68vw;
   padding-top: 5.55vw;
 }
 
-.question-one{
+.question{
   background-color: #BDCDD6;
   width: 69.10vw;
-  height: 5.139vw;
+  height:auto;
   margin: 0 auto;
   margin-top: 2.78vw;
+  display: flex;
 }
 
-.question-one-p{
+.question-q{
   font-family: Shippori Mincho;
-  font-size: 1.399vw;
+  font-size: 2.5vw;
   color: #FFFFFF;
+  text-align: left;
+  padding-top: 1.388vw;
+  margin: 0 1.388vw 0 2.77vw ;
+}
+
+.question-text{
+  width: 59.44vw;
+  font-family: Shippori Mincho;
+  font-size: 1.388vw;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 1.77vw 0;
+}
+
+.answer{
+  background-color: #EBEEF3;
+  width: 69.10vw;
+  height:auto;
+  margin: 0 auto;
+  display: flex;
+}
+
+.answer-a{
+  font-family: Shippori Mincho;
+  font-size: 2.5vw;
   text-align: center;
+  padding-top: 1.388vw;
+  margin: 0 1.388vw 0 2.77vw ;
+}
+
+.answer-text{
+  width: 59.44vw;
+  font-family: Shippori Mincho;
+  font-size: 1.388vw;
+  text-align: left;
+  padding: 2.22vw 0 1.388vw 0;
+}
+@media screen and (max-width: 768px) {
+  .faq-section{
+    padding-bottom: 10.66vw;
+  }
+  
+  .faq-p{
+    font-size: 6.4vw;
+    text-align: center;
+    padding-top: 10.66vw;
+  }
+  
+  .question{
+    background-color: #BDCDD6;
+    width: 82.13vw;
+    margin: 0 auto;
+    margin-top: 5.33vw;
+  }
+  
+  .question-q{
+    font-size: 5.33vw;
+    padding-top: 2.7vw;
+    margin: 0 1.3vw 0 2.13vw ;
+  }
+  
+  .question-text{
+    width: 68.4vw;
+    font-size: 3.466vw;
+    padding: 5.066vw 0 4.266vw 0;
+  }
+  
+  .answer{
+    width: 82.13vw;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .answer-a{
+    font-size: 5.33vw;
+    text-align: center;
+    padding-top: 4.266;
+    margin: 0 1.388vw 0 2.77vw ;
+  }
+  
+  .answer-text{
+    width: 67.44vw;
+    font-size: 3.46vw;
+    padding: 5.066vw 0 4.266vw 0;
+  }
+}
+
+/*footer*/
+footer{
+  background-color: #EEE9DA;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.remade-logo2{
+  width: 9.514vw;
+  height: 8.542vw;
+  margin: 3.403vw 2.431vw 0 15.21vw;
+}
+
+.office-name{
+  font-family: Shippori Mincho;
+  font-size: 1.66vw;
+  margin-top: 2.917vw;
+}
+
+.iso{
+  font-family: Shippori Mincho;
+  font-size: 1.25vw;
+}
+
+.menu-2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25vw;
+  list-style: none;
+  font-family: ShipporiMincho;
+  color: #3F3E44;
+  text-decoration: none;
+
+  margin: 2.77vw 2.77vw 0 0;
+}
+
+.footer-text{
+  width: 100%;
+  height: auto;
+  font-family: Shippori Mincho;
+  font-size: 0.764vw;
+  color: #3F3E44;
+  text-align: center;
+
+  background-color: #EEE9DA;
+  padding-top:  5vw;
+  padding-bottom: 1.388vw;
+}
+
+@media screen and (max-width: 768px) {
+  footer{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+.footer-sp{
+  display: none;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .footer-sp{
+    background-color: #EEE9DA;
+    width: 100%;
+    height: auto;
+  }
+  .office-tittle{
+    display: flex;
+  }
+  .remade-logo2-sp{
+    width: 11.2vw;
+    height: 10.13vw;
+    margin: 10.66vw 3.733vw 0 10.66vw;
+  }
+  
+  .office-name-sp{
+    font-family: ShipporiMincho;
+    font-size: 5.33vw;
+    margin-top: 11.733vw;
+  }
+  
+  .iso-sp{
+    font-size: 2.66vw;
+    margin: 5.33vw 0 0 10.66vw;
+  }
+  
+  .menu-2-sp{
+    display: flex;
+    justify-content: center;
+    padding-top: 12.533vw;
+    margin: 0 auto;
+  }
+  
+  .menu-2-sp-blo{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10.66vw;
+  }
+  
+  .menu-2-sp-l{
+    width: 28.8vw;
+    height: 4.53vw;
+    font-size: 3.2vw;
+    list-style: none;
+    font-family: ShipporiMincho;
+    color: #3F3E44;
+    text-decoration: none;
+    margin-bottom: 2.66vw;
+  }
+
+  .footer-text{
+    width: 100%;
+    height: auto;
+    font-size: 2.13vw;
+  
+    padding-top: 0;
+    padding-bottom: 5.6vw;
+  }
 }
