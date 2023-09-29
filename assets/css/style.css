@@ -1246,7 +1246,7 @@ ul,a{
   transform: translate(-50%, -50%);
 
   font-family: Shippori Mincho;
-  font-size: 1.66vw;
+  font-size: 1.0vw;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -1265,7 +1265,7 @@ ul,a{
   transform: translate(-50%, -50%);
 
   font-family: Shippori Mincho;
-  font-size: 1.66vw;
+  font-size: 1.0vw;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -1511,7 +1511,7 @@ ul,a{
   margin-top: 1.388vw;
   margin-bottom: 5.55vw;
 }
-
+/*簡単な７ステップのモーダルウィンドウ*/
 .overlay {
   position: fixed;
   width: 100%;
@@ -1525,19 +1525,48 @@ ul,a{
   right: 0;
 }
 
-.modal-step-one{
+.modal-step{
   width: 69.44vw;
   height: 13.88vw;
-  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
   display: none;
 }
 
 .overlay.open {
   display: block;
 }
-.modal-step-one.open {
+.modal-step.open {
+  display: flex;
+}
+
+.icon-modal{
+  width: 9.722vw;
+  height: 11.11vw;
+  margin: -1vw 0 0 2.77vw;
+}
+
+.modal-p{
+  font-family: Shippori Mincho;
+  padding: 2.638vw 0;
+  text-align: center;
   display: block;
 }
+.modal-p-big{
+  font-size: 1.66vw;
+}
+.modal-p-sma{
+  font-size: 1.11vw;
+}
+.modal-icon{
+  width: 11.81vw;
+  height: 9.51vw;
+}
+/*モーダルウィンドウここまで*/
+
 .step-one{
   width: 60.42vw;
   height: auto;
