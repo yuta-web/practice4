@@ -1550,20 +1550,22 @@ ul,a{
 }
 
 .modal-p{
-  font-family: Shippori Mincho;
-  padding: 2.638vw 0;
-  text-align: center;
-  display: block;
+  margin: 2.36vw 1.66vw 0 1.388vw;
 }
+
 .modal-p-big{
+  font-family: Shippori Mincho;
   font-size: 1.66vw;
 }
 .modal-p-sma{
+  font-family: Shippori Mincho;
   font-size: 1.11vw;
+  margin-top: 1.388vw;
 }
 .modal-icon{
   width: 11.81vw;
   height: 9.51vw;
+  margin: 2.15vw 2.64vw 2.15vw 0;
 }
 /*モーダルウィンドウここまで*/
 
