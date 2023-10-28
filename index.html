@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@
     <!--FMV-sp用-->
     <div class="fmv-sp">
         <img class="fmv-logo-sp" src="./assets/img/remade-logo2.png" alt="remade-logo2" width="50" height="45">
-        <!--スマホ用の3本線-->
+        <!--ハンバーガーメニュー-->
         <div class="header-menu">
             <hr class="header-menu-1">
             <hr class="header-menu-2">
@@ -449,28 +450,8 @@
         <div class="seven-step-text">
             <p>ミシン修理完了までのフロー</p>
         </div>
-        <!--モーダルウィンドウ-->
-            <div class="overlay" id="js-overlay"></div>
-            <!--step1-->
-            <div class="modal-step" id="js-modal">
-                <img class="icon-modal" src="./assets/img/icon-step1.png" alt="icon-modal" width="140" height="160">
-                <div class="modal-p">
-                    <p class="modal-p-big">LINE登録またはメールフォームからお問い合わせ</p>
-                    <p class="modal-p-sma">まずは、LINEの登録もしくはメールフォームよりお問い合わせください。</p>
-                </div>
-                <img class="modal-icon" src="./assets/img/modal-one.png" alt="modal-one" width="170" height="137">
-            </div>
-            <!--step2-->
-            <div class="modal-step" id="js-modal">
-                <img class="icon-modal" src="./assets/img/icon-step2.png" alt="icon-modal" width="140" height="160">
-                <p class="modal-p">
-                    <p class="modal-p-big">簡単な診断と料金のご提示</p>
-                    <p class="modal-p-sma">お客様にミシンの写真送信、ミシンの状態に関する簡単ないくつかの質問にLINEもしくはメールでご回答いただきます。写真や回答によって6つの料金体系の中からお客様に適した1つの料金をご提示いたします。</p>
-                </p>
-                <img class="modal-icon" src="./assets/img/modal-two.png" alt="modal-one" width="170" height="137">
-            </div>
-        <!--ここまで-->
-        <div class="step-one" id="js-open">
+        
+        <div class="js-modal-open" data-target="modal01">
             <img class="icon-step" src="./assets/img/icon-step1.png" alt="icon-step1" width="80" height="91">
             <p class="step-one-p">LINE登録またはメールフォームからお問い合わせ</p>
             <img class="mishin-icon" src="./assets/img/step1.png" alt="step1" width="60" height="60">
@@ -506,6 +487,35 @@
             <img class="mishin-icon" src="./assets/img/step7.png" alt="step7" width="60" height="60">
         </div>
     </div>
+    <!--モーダルウィンドウ-->
+            <div class="overlay" id="js-overlay"></div>
+            <!--step1-->
+            <div id="modal01" class="modal js-modal">
+                <div class="js-modal-open" data-target="modal01">
+                    <div class="modal-content">
+                        <img class="icon-modal" src="./assets/img/icon-step1.png" alt="icon-modal" width="140" height="160">
+                        <div class="modal-p">
+                            <p class="modal-p-big">LINE登録またはメールフォームからお問い合わせ</p>
+                            <p class="modal-p-sma">まずは、LINEの登録もしくはメールフォームよりお問い合わせください。</p>
+                        </div>
+                        <img class="modal-icon" src="./assets/img/modal-one.png" alt="modal-one" width="170" height="137">
+                    </div>
+                </div>
+            </div>
+            <!--step2-->
+            <div id="modal02" class="modal js-modal">
+                <div class="js-modal-open" data-target="modal02">
+                    <div class="modal-content">
+                        <img class="icon-modal" src="./assets/img/icon-step2.png" alt="icon-modal" width="140" height="160">
+                        <div class="modal-p">
+                            <p class="modal-p-big">簡単な診断と料金のご提示</p>
+                            <p class="modal-p-sma">お客様にミシンの写真送信、ミシンの状態に関する簡単ないくつかの質問にLINEもしくはメールでご回答いただきます。写真や回答によって6つの料金体系の中からお客様に適した1つの料金をご提示いたします。</p>
+                        </div>
+                        <img class="modal-icon" src="./assets/img/modal-two.png" alt="modal-one" width="170" height="137">
+                    </div>
+                </div>
+            </div>
+        <!--ここまで-->
     <!--簡単な７ステップsp-->
     <div class="seven-step-backcolor-sp">
         <div class="seven-step-p">
@@ -652,13 +662,23 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-        const modal = $("#js-modal");
-        const overlay = $("#js-overlay");
-        const open = $("#js-open");
+        // モーダルウィンドウを開く
+        $('.js-modal-open').on('click', function(){
+        var target = $(this).data('target');
+        var modal = document.getElementById(target);
+        scrollPosition = $(window).scrollTop();
 
-        open.on('click', function () { //ボタンをクリックしたら
-            modal.addClass("open"); // modalクラスにopenクラス付与
-            overlay.addClass("open"); // overlayクラスにopenクラス付与
+        $('body').addClass('fixed').css({'top': -scrollPosition});
+        $(modal).fadeIn();
+        return false;
+        });
+
+        // モーダルウィンドウを閉じる
+        $('.js-modal-close').on('click', function(){
+        $('body').removeClass('fixed');
+        window.scrollTo( 0 , scrollPosition );
+        $('.js-modal').fadeOut();
+        return false;
         });
     </script>
 </body>

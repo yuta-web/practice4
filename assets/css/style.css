@@ -1525,21 +1525,29 @@ ul,a{
   right: 0;
 }
 
-.modal-step{
-  width: 69.44vw;
+.js-modal{
   height: 13.88vw;
   position: fixed;
+  top: 50%;
+  display: none;
+  width: 100%;
+}
+
+.modal-content{
+  width: 69.44vw;
+  height: 13.88vw;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #FFFFFF;
-  display: none;
+  display: flex;
 }
 
 .overlay.open {
   display: block;
 }
-.modal-step.open {
+.modal-js-modal.open {
   display: flex;
 }
 
@@ -1560,7 +1568,7 @@ ul,a{
 .modal-p-sma{
   font-family: Shippori Mincho;
   font-size: 1.11vw;
-  margin-top: 1.388vw;
+  margin-top: 1.388vw;  
 }
 .modal-icon{
   width: 11.81vw;
@@ -1569,7 +1577,7 @@ ul,a{
 }
 /*モーダルウィンドウここまで*/
 
-.step-one{
+.js-modal-open,.step-two,.step-thr,.step-four,.step-fiv,.step-six,.step-sev{
   width: 60.42vw;
   height: auto;
   background-color: #FFFFFF;
@@ -1579,13 +1587,6 @@ ul,a{
 }
 
 .step-two,.step-thr,.step-four,.step-fiv,.step-six,.step-sev{
-  width: 60.42vw;
-  height: auto;
-  background-color: #FFFFFF;
-  display: flex;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
   margin-top: 3.264vw;
 }
 
